@@ -7,14 +7,18 @@ export const metadata = {
   description: 'MEHFANN Cultural & Arts Festival',
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body className="bg-gray-50 text-gray-900">
-        <Navbar />  {/* ഇത് ഇവിടെയാണ് ചേർക്കേണ്ടത് */}
-        <main>
-          {children}
-        </main>
+      <body className="t">
+         <Navbar /> 
+         <main>
+            {children}
+         </main>
       </body>
     </html>
   );
